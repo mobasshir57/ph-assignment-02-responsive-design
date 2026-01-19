@@ -67,7 +67,7 @@ li {
 }
 
 .logo {
-    font-size: 60px;
+    font-size: 3.75rem;
 }
 
 .logo .wht {
@@ -80,7 +80,7 @@ li {
 
 .btn {
     font-size: 1.25em;
-    padding: 12.5px 16px;
+    padding: .80rem 1rem;
     color: #FFFFFF;
     border-radius: 63em;
     cursor: pointer;
@@ -93,6 +93,10 @@ li {
             #F7E93F 0%,
             #FB09B4 51%,
             #9100F8 100%);
+}
+
+.hamburger-menu {
+    display: none;
 }
 
 .btn img {
@@ -314,59 +318,67 @@ li {
 }
 
 /* Featured Episodes section */
-.featured{
+.featured {
     padding-top: 6rem;
 }
-.featured h2{
+
+.featured h2 {
     font-size: 3rem;
     font-weight: bold;
-color: #FFFFFF;
-text-align: center;
-margin-bottom: 2.8rem;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 2.8rem;
 }
-.episodes-card{
+
+.episodes-card {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1.8rem;
     margin-bottom: 7rem;
 }
-.epi-card{
-    
-}
-.epi-card iframe{
+
+.epi-card {}
+
+.epi-card iframe {
     width: 100%;
     height: 50%;
     border-top-right-radius: 1.5rem;
     border-top-left-radius: 1.5rem;
 }
-.crd-txt{
+
+.crd-txt {
     padding: 1.5rem;
     background-color: #250D44;
     border-bottom-right-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
 }
-.crd-txt h3{
+
+.crd-txt h3 {
     font-size: 1.5rem;
     font-weight: bold;
     color: #FFFFFF;
     margin-bottom: .75rem;
 }
-.crd-txt p{
+
+.crd-txt p {
     color: #FFFFFF;
     line-height: 1.5rem;
 }
-.time{
+
+.time {
     display: flex;
     align-items: center;
     gap: 6px;
     margin-top: .75rem;
 }
-.time img{
+
+.time img {
     width: 1.25rem;
     height: 1.25rem;
 }
-.time p{
+
+.time p {
     color: #00FF88;
     line-height: 1.5rem;
     font-weight: 600;
@@ -374,17 +386,19 @@ margin-bottom: 2.8rem;
 }
 
 /* Meet the Host section */
-.host{
+.host {
     padding-bottom: 6rem;
 }
-.host h2{
+
+.host h2 {
     color: #FFFFFF;
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
     margin-bottom: 2.8rem;
 }
-.host-details{
+
+.host-details {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -394,25 +408,29 @@ margin-bottom: 2.8rem;
     border-radius: 2.8rem;
 
 }
-.alex h3{
+
+.alex h3 {
     color: #FFFFFF;
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
 }
-.alex p{
+
+.alex p {
     color: rgba(255, 255, 255, 1);
     line-height: 1.5rem;
     margin-bottom: 1rem;
 
 }
-.social{
+
+.social {
     display: flex;
     align-items: center;
     justify-content: left;
     gap: 1rem;
 }
-.social img{
+
+.social img {
     width: 2.8rem;
     height: 2.8rem;
     padding: .50rem;
@@ -423,43 +441,120 @@ margin-bottom: 2.8rem;
 }
 
 /* Footer Section */
-footer{
+footer {
     background-image: url(../assets/footer-bg.png);
     background-repeat: no-repeat;
     background-position: center;
 }
-.footer{
+
+.footer {
     width: 95%;
     margin: 0px auto;
     text-align: center;
 
 }
-.footer h2{
+
+.footer h2 {
     padding-top: 6rem;
     margin-bottom: 2rem;
 }
-.footer-icons{
+
+.footer-icons {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
     gap: 2.8rem;
 }
-.footer-icon{
+
+.footer-icon {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: .5rem;
 }
-.footer-icon img{
+
+.footer-icon img {
     width: 1.5rem;
     height: 1.5rem;
 }
-.footer-icon p{
+
+.footer-icon p {
     font-weight: 500;
     color: #FFFFFF;
 }
-.footer-pera{
+
+.footer-pera {
     color: #FAFAFA;
     padding-bottom: 6rem;
+}
+
+
+/* Responsive For Mobile Devices */
+
+@media screen and (max-width:576px) {
+
+    .menu-item,
+    .menu-btn {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        font-size: 1.6rem;
+        background: none;
+        border: none;
+        color: #fff;
+    }
+
+    .about-txt h2 {
+        font-size: 2rem;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-choose h2 {
+        font-size: 2rem;
+    }
+
+    .choose-cards {
+        display: grid;
+        grid-template-areas:
+            "one "
+            "two "
+            "three "
+            "four "
+            "five";
+    }
+
+    .episodes-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .host-details {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .social{
+        justify-content: center;
+    }
+
+    .about-us,
+    .why-choose,
+    .episodes
+    .nav {
+        width: 100%;
+    }
+    .footer-pera{
+            padding-bottom: 4rem;
+    }
+    .footer-icons{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
