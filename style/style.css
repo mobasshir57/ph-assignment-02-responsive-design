@@ -1,4 +1,170 @@
-.font-family{
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.font-family {
     font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
+    font-optical-sizing: auto;
+}
+
+:root {}
+
+body {
+    width: 100%;
+}
+
+main {
+    width: 80%;
+    margin: 0px auto;
+}
+
+/* Header Section  */
+
+header {
+    background-color: rgba(26, 11, 46, 1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(26, 11, 46, 1);
+    width: 80%;
+    margin: 0px auto;
+    padding: 25px auto;
+}
+
+ul {
+    display: flex;
+    gap: 2em;
+
+}
+
+ul li {
+    list-style: none;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+li {
+    color: #FFFFFF;
+}
+
+.logo {
+    font-size: 60px;
+}
+
+.logo .wht {
+    color: #FFFFFF;
+}
+
+.logo .clr {
+    color: #FB09B4;
+}
+
+.btn {
+    font-size: 1.25em;
+    padding: 12.5px 16px;
+    color: #FFFFFF;
+    border-radius: 63em;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    background: linear-gradient(to right,
+            #F7E93F 0%,
+            #FB09B4 51%,
+            #9100F8 100%);
+}
+
+.btn img {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url(../assets/hero-bg.png);
+    width: 100%;
+    height: auto;
+}
+
+.hero1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+padding: 6.2rem;
+margin: 0px auto;
+}
+
+.hero-img {
+    width: 350px;
+    height: 350px;
+    border: red 1px solid;
+}
+.hero-img p{
+    color: #FFFFFF;
+}
+.hero-img .circle {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-txt h1 {
+    color: #FFFFFF;
+    font-size: 3.75rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.hero-txt p {
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.hero-btn {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    font-size: 1em;
+    color: rgba(0, 255, 136, 1);
+    font-weight: 600;
+    padding: 12.5px 21px;
+    border: rgba(0, 255, 136, 1) 2px solid;
+    border-radius: 63em;
+    background-color: transparent;
+    cursor: pointer;
+}
+.hero-btn button img{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
