@@ -338,11 +338,10 @@ li {
     margin-bottom: 7rem;
 }
 
-.epi-card {}
 
 .epi-card iframe {
     width: 100%;
-    height: 50%;
+    height: auto;
     border-top-right-radius: 1.5rem;
     border-top-left-radius: 1.5rem;
 }
@@ -506,6 +505,77 @@ footer {
         border: none;
         color: #fff;
     }
+.logo{
+    font-size: 2.5rem;
+}
+    .about-txt h2 {
+        font-size: 2rem;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-choose h2 {
+        font-size: 2rem;
+    }
+
+    .choose-cards {
+        display: grid;
+        grid-template-areas:
+            "one "
+            "two "
+            "three "
+            "four "
+            "five";
+    }
+
+    .episodes-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .host-details {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .social{
+        justify-content: center;
+    }
+
+   
+    .why-choose,
+    .episodes
+    .nav {
+        width: 100%;
+    }
+    .footer-pera{
+            padding-bottom: 2rem;
+    }
+    .footer-icons{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive For Tablet Devices */
+
+ /* @media screen and (min-width:576px) and (max-width:980px) {
+
+    .menu-item,
+    .menu-btn {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        font-size: 1.6rem;
+        background: none;
+        border: none;
+        color: #fff;
+    }
 
     .about-txt h2 {
         font-size: 2rem;
@@ -553,8 +623,5 @@ footer {
     .footer-pera{
             padding-bottom: 4rem;
     }
-    .footer-icons{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+    
+} */
