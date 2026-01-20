@@ -66,6 +66,13 @@ li {
     color: #FFFFFF;
 }
 
+li:hover {
+    color: #1A0B2E;
+    background-color: #FFFFFF;
+    transition-duration: .5s;
+    border-radius: 10%;
+}
+
 .logo {
     font-size: 3.75rem;
 }
@@ -93,6 +100,13 @@ li {
             #F7E93F 0%,
             #FB09B4 51%,
             #9100F8 100%);
+}
+
+.btn:hover {
+    transform: scale(1.04);
+    box-shadow: 0 15px 30px rgba(251, 9, 180, 0.4);
+    transition-duration: .3s;
+
 }
 
 .hamburger-menu {
@@ -147,6 +161,11 @@ li {
     top: 20px;
 }
 
+.hero-img p:hover {
+    transform: scale(0.96);
+
+}
+
 .hero-img .circle {
     width: 100%;
     height: 100%;
@@ -165,6 +184,7 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .hero-txt h1 {
@@ -197,6 +217,12 @@ li {
     border-radius: 63em;
     background-color: transparent;
     cursor: pointer;
+}
+
+.btn-2:hover {
+    background-position: left;
+    transform: translatex(4px);
+    transition: transform 0.4s ease;
 }
 
 .hero-btn button img {
@@ -245,6 +271,12 @@ li {
 .card p {
     color: #FFFFFF;
     line-height: 20px;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(43, 216, 21, 0.3);
+    transition: transform 0.4s ease;
 }
 
 /* Why Choose TechWave section */
@@ -317,6 +349,14 @@ li {
     line-height: 1.5rem;
 }
 
+.choose-card img {
+    transition: transform 0.3s ease;
+}
+
+.choose-card:hover img {
+    transform: translateY(-6px);
+}
+
 /* Featured Episodes section */
 .featured {
     padding-top: 6rem;
@@ -337,7 +377,9 @@ li {
     gap: 1.8rem;
     margin-bottom: 7rem;
 }
-
+.card-hidden{
+    display: none;
+}
 
 .epi-card iframe {
     width: 100%;
@@ -505,9 +547,27 @@ footer {
         border: none;
         color: #fff;
     }
-.logo{
-    font-size: 2.5rem;
-}
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    .hero-img {
+        width: 17.5em;
+        height: 17.5em;
+    }
+
+    .hero-img p {
+        font-size: 1.1rem;
+        left: 80%;
+        top: 10%;
+    }
+
+    .micro {
+        left: 31%;
+        top: 17%;
+    }
+
     .about-txt h2 {
         font-size: 2rem;
     }
@@ -541,20 +601,22 @@ footer {
         flex-direction: column;
         text-align: center;
     }
-    .social{
+
+    .social {
         justify-content: center;
     }
 
-   
+
     .why-choose,
-    .episodes
-    .nav {
+    .episodes .nav {
         width: 100%;
     }
-    .footer-pera{
-            padding-bottom: 2rem;
+
+    .footer-pera {
+        padding-bottom: 2rem;
     }
-    .footer-icons{
+
+    .footer-icons {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -562,7 +624,7 @@ footer {
 
 /* Responsive For Tablet Devices */
 
- /* @media screen and (min-width:576px) and (max-width:980px) {
+@media screen and (min-width:576px) and (max-width:980px) {
 
     .menu-item,
     .menu-btn {
@@ -593,16 +655,17 @@ footer {
     .choose-cards {
         display: grid;
         grid-template-areas:
-            "one "
-            "two "
-            "three "
-            "four "
-            "five";
+            "one one"
+            "two three "
+            "four five";
     }
 
     .episodes-card {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+       grid-template-columns: repeat(2, 1fr);
+    }
+    .card-hidden{
+        display: block;
     }
 
     .host-details {
@@ -614,7 +677,7 @@ footer {
         justify-content: center;
     }
 
-    .about-us,
+    
     .why-choose,
     .episodes
     .nav {
@@ -624,4 +687,4 @@ footer {
             padding-bottom: 4rem;
     }
     
-} */
+}
